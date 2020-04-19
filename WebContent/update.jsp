@@ -6,7 +6,7 @@
 <html>
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width" initial-scale="1" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
     <title>상우 디자인하우스</title>
     <link rel="stylesheet" href="css/bootstrap.min.css" />
     <link rel="stylesheet" href="css/custom.css" />
@@ -72,7 +72,7 @@
               role="button"
               aria-haspopup="true"
               aria-expanded="false"
-              >회원관리<span class="caret"></span
+              ><%=userID%> 님<span class="caret"></span
             ></a>
             <ul class="dropdown-menu">
               <li>
