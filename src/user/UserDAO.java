@@ -1,9 +1,10 @@
 package user;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+
+import util.DatabaseUtil;
 
 public class UserDAO {
 	private Connection conn;
@@ -11,15 +12,7 @@ public class UserDAO {
 	private ResultSet rs;
 	
 	public UserDAO() {
-		try {
-			String dbURL = "jdbc:mysql://localhost:3307/BBS";
-			String dbID = "dbn";
-			String dbPassword = "1234";
-			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		conn = DatabaseUtil.getConnection();
 	}
 	
 	public int login(String userID, String userPassword) {

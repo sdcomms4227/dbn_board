@@ -1,10 +1,11 @@
 package bbs;
 
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
+
+import util.DatabaseUtil;
 
 public class BbsDAO {
 	
@@ -12,15 +13,7 @@ public class BbsDAO {
 	private ResultSet rs;
 	
 	public BbsDAO() {
-		try {
-			String dbURL = "jdbc:mysql://localhost:3307/BBS";
-			String dbID = "dbn";
-			String dbPassword = "1234";
-			Class.forName("com.mysql.jdbc.Driver");
-			conn = DriverManager.getConnection(dbURL, dbID, dbPassword);
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		conn = DatabaseUtil.getConnection();
 	}
 	
 	public String getDate() {
