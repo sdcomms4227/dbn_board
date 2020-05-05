@@ -90,13 +90,13 @@
 			</ol>
 			<div class="carousel-inner">
 				<div class="item active">
-					<img src="https://via.placeholder.com/1110x600/">
+					<img src="https://via.placeholder.com/1140x600/">
 				</div>
 				<div class="item">
-					<img src="https://via.placeholder.com/1110x600/">
+					<img src="https://via.placeholder.com/1140x600/">
 				</div>
 				<div class="item">
-					<img src="https://via.placeholder.com/1110x600/">
+					<img src="https://via.placeholder.com/1140x600/">
 				</div>
 				<a class="left carousel-control" href="#myCarousel" data-slide="prev">
 					<span class="glyphicon glyphicon-chevron-left"></span>
