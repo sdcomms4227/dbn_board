@@ -49,13 +49,13 @@
 				<form action="joinAction.jsp" method="post">
 					<h3 style="text-align: center;">회원가입 화면</h3>
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="아이디" name="userID" mexlength="20" />
+						<input type="text" class="form-control" placeholder="아이디" name="userID" maxlength="20" />
 					</div>
 					<div class="form-group">
-						<input type="password" class="form-control" placeholder="비밀번호" name="userPassword" mexlength="20" />
+						<input type="password" class="form-control" placeholder="비밀번호" name="userPassword" maxlength="20" />
 					</div>
 					<div class="form-group">
-						<input type="text" class="form-control" placeholder="이름" name="userName" mexlength="20" />
+						<input type="text" class="form-control" placeholder="이름" name="userName" maxlength="20" />
 					</div>
 					<div class="form-group" style="text-align: center;">
 						<div class="btn-group" data-toggle="buttons">
@@ -70,7 +70,7 @@
 						</div>
 					</div>
 					<div class="form-group">
-						<input type="email" class="form-control" placeholder="이메일" name="userEmail" mexlength="50" />
+						<input type="email" class="form-control" placeholder="이메일" name="userEmail" maxlength="50" />
 					</div>
 					<input type="submit" class="btn btn-primary form-control" value="회원가입" />
 				</form>
